@@ -103,3 +103,65 @@ models:
         description: Web browser
       - name: device_category
         description: Device category (mobile, desktop, tablet)
+
+  - name: rpt_landing_page_performance
+    description: |
+      Landing page performance analysis showing conversion rates, 
+      revenue metrics, and engagement by landing page.
+    columns:
+      - name: landing_page
+        description: URL of the first page viewed in the session
+        tests:
+          - not_null
+      - name: total_sessions
+        description: Total number of sessions starting from this landing page
+        tests:
+          - not_null
+      - name: conversion_rate_pct
+        description: Percentage of sessions that resulted in a purchase
+      - name: total_revenue
+        description: Total revenue generated from sessions starting on this page
+      - name: avg_session_duration_minutes
+        description: Average time spent on site from this landing page
+
+  - name: rpt_session_duration_cohorts
+    description: |
+      Session duration cohort analysis grouping sessions by time spent
+      to show correlation between engagement and conversion.
+    columns:
+      - name: duration_cohort
+        description: Time-spent bucket (e.g., "1-10s", "1-3min")
+        tests:
+          - not_null
+      - name: cohort_order
+        description: Numeric order for sorting cohorts
+        tests:
+          - not_null
+      - name: total_sessions
+        description: Number of sessions in this duration cohort
+        tests:
+          - not_null
+      - name: conversion_rate_pct
+        description: Percentage of sessions that converted
+      - name: avg_duration_seconds
+        description: Average session duration within this cohort
+
+  - name: rpt_landing_page_engagement_matrix
+    description: |
+      Cross-analysis of landing pages and engagement levels
+      to identify high-performing entry points.
+    columns:
+      - name: landing_page
+        description: URL of the first page viewed in the session
+        tests:
+          - not_null
+      - name: engagement_level
+        description: Engagement category (Low/Medium/High)
+        tests:
+          - not_null
+      - name: sessions
+        description: Number of sessions in this landing page × engagement combination
+        tests:
+          - not_null
+      - name: conversion_rate_pct
+        description: Conversion rate for this combination

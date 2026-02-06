@@ -14,7 +14,7 @@ This project converts raw Google Analytics 4 (GA4) export data into **trusted, a
 - **Looker Studio dashboard** for KPI trends, funnel visualization, and product performance
 - **Data quality visibility layer** (tests + DQ reporting table) to surface issues transparently
 
-![image](/images/flow.png)
+![image](images/flow.png)
 
 ## Overview
 Build a reusable analytics pipeline that converts raw GA4 export data into trusted, analysis-ready tables and a dashboard that makes revenue and funnel performance easy to monitor and diagnose. The output is a consistent “single source of truth” for core e-commerce metrics and funnel insights.
@@ -65,6 +65,10 @@ This matters more now because teams have more channels, more events, and higher 
 - **A data quality visibility layer** (tests + DQ reporting table) to surface issues transparently  
 
 ## Definitions 
+
+**KPI Source**: For the complete logic and design, see [KPI Definitions (Excel)](references/kpi.xlsx).
+<br>
+![KPI Dashboard](images/image.png)
 
 ### Session
 **Def:** Events grouped into one session using `user_pseudo_id + ga_session_id`.  

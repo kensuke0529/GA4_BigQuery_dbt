@@ -27,7 +27,7 @@ ENV/
 # Credentials
 *.json
 profiles.yml
-check_purchase_events.sql
-
 # OS
 Thumbs.db
+dbt_internal_packages/
+venv_broken/
