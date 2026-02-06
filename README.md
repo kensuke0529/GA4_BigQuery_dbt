@@ -114,6 +114,9 @@ To power interactive dashboards without lag, this project pre-computes **wide re
 **DQ reporting**
 - `rpt_purchase_dq_analysis` surfaces issues (counts + revenue impact) so stakeholders can see what’s affected and why
 
+## Exploratory Analysis
+For deep-dive analysis on purchaser sessions, including geolocation revenue trends, engagement cohorts, and product view impact, see the [Purchaser Session Analysis Notebook](ga4-puchase_session.ipynb).
+
 ## Insights 
 ### Interactive Insights
 The new data model powers the **Looker Studio Dashboard**, enabling instant answers to:
