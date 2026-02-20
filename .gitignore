@@ -32,3 +32,6 @@ profiles.yml
 Thumbs.db
 dbt_internal_packages/
 venv_broken/
+
+.user.yml
+project-lock.yml
