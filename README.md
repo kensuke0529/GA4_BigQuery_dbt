@@ -115,9 +115,8 @@ To power interactive dashboards without lag, this project pre-computes **wide re
 - `rpt_purchase_dq_analysis` surfaces issues (counts + revenue impact) so stakeholders can see what’s affected and why
 
 ## Exploratory Analysis
-For deep-dive analysis on purchaser sessions, including geolocation revenue trends, engagement cohorts, and product view impact, see the [Purchaser Session Analysis Notebook](notebooks/ga4-purchase-session.ipynb).
+For deep-dive analysis on purchaser sessions, including geolocation revenue trends, engagement cohorts, and product view impact, see the [Purchaser Session Analysis](docs/data_filtering_summary.md).
 
-For more detailed model documentation, see [Models Documentation](docs/models.md).
 
 ## Insights 
 ### Interactive Insights
