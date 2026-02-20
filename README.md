@@ -1,12 +1,11 @@
 # E-commerce Revenue Intelligence & Funnel Optimization
-**From raw GA4 events to board-ready dashboards**
+
+[**Live Dashboard**](https://lookerstudio.google.com/reporting/db8290ae-d10d-45f9-9cdb-1df9a85a5fff) • [**Full Analysis**](docs/data_filtering_summary.md)
+
 
 ![Data Engineering Pipeline Architecture](images/dashboard_v2.png)
 
-[**View Live Looker Studio Dashboard**](https://lookerstudio.google.com/reporting/db8290ae-d10d-45f9-9cdb-1df9a85a5fff)
 
-
-## Summary
 This project converts raw Google Analytics 4 (GA4) export data into **trusted, analysis-ready reporting tables** and a **Looker Studio dashboard** for monitoring and diagnosing **revenue** and **funnel performance**.
 
 **Primary outputs**
@@ -66,12 +65,12 @@ This matters more now because teams have more channels, more events, and higher 
 
 ## Definitions 
 
-**KPI Source**: For the complete logic and design, see [KPI Definitions](references/kpi.xlsx).
+**KPI Source**: For the complete logic and design.
 <br>
 ![KPI Dashboard](images/image.png)
 
 ### Session
-**Def:** Events grouped into one session using `user_pseudo_id + ga_session_id`.  
+**Def:**xEvents grouped into one session using `user_pseudo_id + ga_session_id`.  
 **Reason:** `ga_session_id` alone isn’t unique across all users, so combining it with the user ID makes a reliable session key.
 
 ### Conversion
