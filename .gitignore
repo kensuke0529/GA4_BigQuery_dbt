@@ -27,6 +27,7 @@ ENV/
 # Credentials
 *.json
 profiles.yml
+.secrets/
 # OS
 Thumbs.db
 dbt_internal_packages/

@@ -66,7 +66,7 @@ This matters more now because teams have more channels, more events, and higher 
 
 ## Definitions 
 
-**KPI Source**: For the complete logic and design, see [KPI Definitions (Excel)](references/kpi.xlsx).
+**KPI Source**: For the complete logic and design, see [KPI Definitions](references/kpi.xlsx).
 <br>
 ![KPI Dashboard](images/image.png)
 
@@ -115,7 +115,9 @@ To power interactive dashboards without lag, this project pre-computes **wide re
 - `rpt_purchase_dq_analysis` surfaces issues (counts + revenue impact) so stakeholders can see what’s affected and why
 
 ## Exploratory Analysis
-For deep-dive analysis on purchaser sessions, including geolocation revenue trends, engagement cohorts, and product view impact, see the [Purchaser Session Analysis Notebook](ga4-puchase_session.ipynb).
+For deep-dive analysis on purchaser sessions, including geolocation revenue trends, engagement cohorts, and product view impact, see the [Purchaser Session Analysis Notebook](notebooks/ga4-purchase-session.ipynb).
+
+For more detailed model documentation, see [Models Documentation](docs/models.md).
 
 ## Insights 
 ### Interactive Insights
@@ -127,6 +129,8 @@ The new data model powers the **Looker Studio Dashboard**, enabling instant answ
 ### Data Quality Analysis 
 - **Transparency**: The pipeline identified **1,800 purchase lines** (approx. $32k revenue) with missing Transaction IDs. 
 - **Action**: Instead of filtering these out, they are flagged in rpt_purchase_dq_analysis for stakeholder review, ensuring 100% of revenue data is visible while maintaining data governance.
+
+
 
 
 
